@@ -1,49 +1,214 @@
-/* Reset CSS */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+:root {
+  --font-family: 'Poppins', sans-serif;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-	line-height: 1;
+  font-family: var(--font-family);
+  background-color: #fff;
+  color: #333;
 }
-ol, ul {
-	list-style: none;
+
+/* === HEADER === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 2.5rem;
+  background: rgba(250, 212, 246, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  z-index: 999;
 }
-blockquote, q {
-	quotes: none;
+
+.logo img {
+  width: 120px;
+  display: block;
+  cursor: pointer;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.nav ul {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  transition: all 0.3s ease;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+
+.nav ul li a {
+  color: #470b36;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 32px 20px;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #d8345f;
+}
+
+.has-subnav {
+  position: relative;
+}
+
+.subnav {
+  position: absolute;
+}
+
+
+/* === BANNER === */
+.banner {
+  margin-top: 90px; /* offset header */
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* === PRODUCT SECTION === */
+.product-new {
+  padding: 4rem 0;
+}
+
+.product-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #470b36;
+}
+
+/* === BUTTON ARROWS === */
+.button i {
+  background: linear-gradient(to left, #d1d1d1 50%, #a3a3a3 50%);
+  background-size: 200% 100%;
+  background-position:  right bottom;
+  color: #000;
+  padding: 20px 20px;
+  border: none;
+  transition: background-position 0.4s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.button i:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+/* === PRODUCT LIST === */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product {
+  width: 250px;
+  background: #fff0f6;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.title-product {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #470b36;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #d8345f;
+  margin-bottom: 1rem;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .product {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+
+  .nav-product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #470b36;
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: #fad4f6;
+    z-index: 9;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
