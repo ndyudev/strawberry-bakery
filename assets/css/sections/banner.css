@@ -1,0 +1,10 @@
+/* === BANNER === */
+.banner {
+  margin-top: 90px; /* offset header */
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
