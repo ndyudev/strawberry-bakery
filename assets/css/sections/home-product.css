@@ -1,0 +1,116 @@
+/* === PRODUCT SECTION === */
+.product-center {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: var(--spacing-3xl) 0;
+}
+
+.product-center--no-padding {
+  padding-bottom: 0 !important;
+}
+
+.nav-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* === BUTTON ARROWS === */
+.button i {
+  background: linear-gradient(to left, #d1d1d1 50%, #a3a3a3 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: var(--color-text);
+  padding: var(--spacing-lg);
+  border: none;
+  transition: background-position var(--transition-slow), transform var(--transition-normal);
+  cursor: pointer;
+}
+
+.button i:hover {
+  background-position: left bottom;
+  color: var(--color-white);
+}
+
+/* === PRODUCT LIST === */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  justify-content: center;
+}
+
+.product {
+  width: 250px;
+  background: var(--color-accent-light);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.title-product {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+  color: var(--color-secondary);
+}
+
+.price {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.list-page {
+  margin-top: 80px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.list-page ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.list-page ul li {
+  margin: var(--spacing-sm);
+}
+
+.list-page ul li i {
+  color: var(--color-secondary);
+}
+
+.list-page ul li a.pagination-dot {
+  background-color: var(--color-gray);
+  opacity: 0.15;
+  border-radius: 50%;
+  color: var(--color-white);
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  text-indent: -9999px;
+  margin: var(--spacing-md) var(--spacing-sm);
+}
+
+.product-section--favorites {
+  background-color: var(--color-accent-dark);
+  margin-top: 50px;
+} 
