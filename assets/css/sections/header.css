@@ -19,6 +19,7 @@
   width: 120px;
   display: block;
   cursor: pointer;
+  position: relative;
 }
 
 .nav ul {
@@ -88,4 +89,54 @@
   font-size: var(--font-size-2xl);
   cursor: pointer;
   color: var(--color-secondary);
+}
+
+/* Đảm bảo nav-slider nằm giữa banner */
+.banner {
+  position: relative;
+  width: 100%;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 500px; /* ép đúng chiều cao */
+  object-fit: cover; /* crop ảnh giữ đúng tỉ lệ đẹp */
+  display: block;
+  cursor: pointer;
+}
+
+.nav-slider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  /* transform: translateY(-50%); */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none; /* để không chặn sự kiện ảnh nếu cần */
+}
+
+.nav-slider i {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  pointer-events: all;
+  transition: background-color 0.2s ease;
+}
+
+.nav-slider i:hover {
+  background-color: #fff;
+}
+
+.banner-img img {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.banner-img img.fade-out {
+  opacity: 0;
 }
