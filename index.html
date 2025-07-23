@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strawberry Bakery</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/sections/footer.css">
-    <link rel="stylesheet" href="./assets/css/sections/header.css">
-    <link rel="stylesheet" href="./assets/css/sections/product.css">
     <link rel="icon" href="./assets/images/logo/strawberry-bakery-logo.svg" />
     <script
       src="https://kit.fontawesome.com/f4e3fc99b3.js"
@@ -32,10 +29,10 @@
                 Menu
                 <i class="fa-solid fa-caret-down"></i>
               </a>
-              <ul class="subnav">
-                <li><a href="#">Sweetbox</a></li>
+              <ul class="subnav" id="subnav-list">
+                <!-- <li><a href="#">Sweetbox</a></li>
                 <li><a href="#">Cake</a></li>
-                <li><a href="#">Flan Gato</a></li>
+                <li><a href="#">Flan Gato</a></li> -->
               </ul>
             </li>
             <li><a href="#">Delivery</a></li>
@@ -50,10 +47,11 @@
 
       <!-- Banner -->
       <div class="banner">
-        <img
-          src="./assets/images/banner/strawberry-bakery-banner.png"
-          alt="Strawberry Bakery Banner"
-        />
+        <div class="banner-img"></div>
+        <nav class="nav-slider">
+          <i class="fa-solid fa-chevron-left" onclick="prevBanner()"></i>
+          <i class="fa-solid fa-chevron-right" onclick="nextBanner()"></i>
+        </nav>
       </div>
 
       <!-- Product New -->
@@ -69,40 +67,52 @@
           <!-- Product List -->
           <div class="product-list">
             <div class="product">
-              <img src="./assets/images/product/product-1.jpg" alt="Tiralychee - Tiramisu Vải Mây" />
+              <img
+                src="./assets/images/product/product-1.jpg"
+                alt="Tiralychee - Tiramisu Vải Mây"
+              />
               <h3 class="title-product">Tiralychee - Tiramisu Vải Mây</h3>
               <p class="price">625.000 đ</p>
             </div>
             <div class="product">
-              <img src="./assets/images/product/product-2.jpg" alt="Sweetin - Chocolate Ruby" />
+              <img
+                src="./assets/images/product/product-2.jpg"
+                alt="Sweetin - Chocolate Ruby"
+              />
               <h3 class="title-product">
                 Sweetin – Chocolate Ruby (Modern Classic)
               </h3>
               <p class="price">395.000 đ</p>
             </div>
             <div class="product">
-              <img src="./assets/images/product/product-3.jpg" alt="Sweetin - Tiralychée" />
+              <img
+                src="./assets/images/product/product-3.jpg"
+                alt="Sweetin - Tiralychée"
+              />
               <h3 class="title-product">
                 Sweetin – Tiralychée (Modern Luxury)
               </h3>
               <p class="price">235.000 đ</p>
             </div>
             <div class="product">
-              <img src="./assets/images/product/product-4.jpg" alt="Sweetin - Tiralychée Premium" />
+              <img
+                src="./assets/images/product/product-4.jpg"
+                alt="Sweetin - Tiralychée Premium"
+              />
               <h3 class="title-product">Sweetin – Tiralychée (Premium)</h3>
               <p class="price">345.000 đ</p>
             </div>
           </div>
-                      <div class="list-page">
-              <ul>
-                <li>
-                  <a href="#" class="home">
-                    <i class="fa-solid fa-house-chimney"></i>
-                  </a>
-                </li>
-                <li><a href="#" class="pagination-dot"> 0 </a></li>
-              </ul>
-            </div>
+          <div class="list-page">
+            <ul>
+              <li>
+                <a href="#" class="home">
+                  <i class="fa-solid fa-house-chimney"></i>
+                </a>
+              </li>
+              <li><a href="#" class="pagination-dot"> 0 </a></li>
+            </ul>
+          </div>
         </div>
         <div class="product-new product-section--favorites">
           <div class="product-center">
@@ -113,40 +123,9 @@
                 <i class="fa-solid fa-chevron-right"></i>
               </div>
             </div>
-            <!-- Product List -->
-            <div class="product-list">
-              <div class="product">
-                <img
-                  src="./assets/images/product/product-5.jpg"
-                  alt="product"
-                />
-                <h3 class="title-product">Tropical Green – Mousse Mãng Cầu Dâu Tây</h3>
-                <p class="price">625.000 đ</p>
-              </div>
-              <div class="product">
-                <img
-                  src="./assets/images/product/product-6.jpg"
-                  alt="product"
-                />
-                <h3 class="title-product">Tropical Aura – Mousse Bưởi Đỏ Thanh Trà</h3>
-                <p class="price">585.000 đ</p>
-              </div>
-              <div class="product">
-                <img
-                  src="./assets/images/product/product-7.jpg"
-                  alt="product"
-                />
-                <h3 class="title-product">Tiralychee - Tiramisu Vải Mây</h3>
-                <p class="price">625.000 đ</p>
-              </div>
-              <div class="product">
-                <img
-                  src="./assets/images/product/product-8.jpg"
-                  alt="product"
-                />
-                <h3 class="title-product">Green Bliss – Mousse Bơ (Premium)</h3>
-                <p class="price">535.000 đ</p>
-              </div>
+            <!-- Product List Hot -->
+            <div class="product-list hot-products">
+              <!-- Hot products will be rendered here -->
             </div>
             <div class="list-page">
               <ul>
@@ -188,7 +167,7 @@
           <!-- Contact -->
           <div class="footer-contact">
             <h4>Contact Us</h4>
-            <p>🍰 227 Bach Dang, Ho Chi Minh</p>
+            <p>🍰 227 Bach Dang, Ho Chi Minh City</p>
             <p>📧 sales@strawberrybakery.com</p>
             <p>📞 (+84) 787 544 232</p>
           </div>
@@ -208,6 +187,9 @@
         </div>
       </footer>
     </div>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/subnav-data.js"></script>
+    <script src="./js/slider-banner.js"></script>
+    <script type="module" src="./js/product-hot.js"></script>
   </body>
 </html>
