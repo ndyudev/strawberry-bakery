@@ -3,20 +3,20 @@ let listSubNav = [
   { title: "Sweetin", key: "sweetin" },
   { title: "Flan", key: "flan" },
   { title: "Cookies", key: "cookies" },
-  { title: "Cakes", key: "donuts" },
+  { title: "Cakes", key: "cakes" },
   { title: "Healthy", key: "healthy" },
 ];
 
 let listProduct = [
   // Cakes (8 ảnh)
-  { title: "Strawberry Shortcake", price: 320000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-1.jpg" },
-  { title: "Strawberry Cheese Mousse", price: 350000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-2.jpg" },
-  { title: "Strawberry Tiramisu", price: 370000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-3.jpg" },
-  { title: "Strawberry Yogurt Cake", price: 340000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-4.jpg" },
-  { title: "Strawberry Chocolate Gateau", price: 390000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-5.jpg" },
-  { title: "Strawberry Cream Roll", price: 280000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-6.jpg" },
-  { title: "Strawberry Fresh Cream", price: 310000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-7.jpg" },
-  { title: "Strawberry Dream Cake", price: 360000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-8.jpg" },
+  { title: "Classic Butter Cookies", price: 95000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-1.jpg" },
+  { title: "Chocolate Chip Cookies", price: 105000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-2.jpg" },
+  { title: "Matcha Almond Cookies", price: 115000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-3.jpg" },
+  { title: "Sweetin Chocolate Ruby", price: 395000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-4.jpg" },
+  { title: "Sweetin Tiramisu Vải", price: 345000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-5.jpg" },
+  { title: "Sweetin Matcha Opera", price: 235000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-6.jpg" },
+  { title: "Sweetin Love Garden", price: 415000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-7.jpg" },
+  { title: "Coconut Cookies", price: 95000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-8.jpg" },
 
   // Cookies (9 ảnh)
   { title: "Classic Butter Cookies", price: 95000, category: "cookies", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-1.jpg" },
@@ -27,7 +27,7 @@ let listProduct = [
   { title: "Pistachio Cookies", price: 125000, category: "cookies", view: 1, hot: 0, img: "./assets/images/product/cookies/cookies-6.jpg" },
   { title: "Hazelnut Cookies", price: 115000, category: "cookies", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-7.jpg" },
   { title: "Coconut Cookies", price: 95000, category: "cookies", view: 1, hot: 0, img: "./assets/images/product/cookies/cookies-8.jpg" },
-  { title: "Coffee Bean Cookies", price: 105000, category: "cookies", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-9.jpg" },
+  // { title: "Coffee Bean Cookies", price: 105000, category: "cookies", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-9.jpg" },
 
   // Sweetin (6 ảnh)
   { title: "Sweetin Chocolate Ruby", price: 395000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-1.jpg" },
@@ -36,6 +36,8 @@ let listProduct = [
   { title: "Sweetin Love Garden", price: 415000, category: "sweetin", view: 1, hot: 0, img: "./assets/images/product/sweetin/sweetin-4.jpg" },
   { title: "Sweetin Caramel Mousse", price: 255000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-5.jpg" },
   { title: "Sweetin Berry Mix", price: 265000, category: "sweetin", view: 1, hot: 0, img: "./assets/images/product/sweetin/sweetin-6.jpg" },
+    { title: "Sweetin Matcha Opera", price: 235000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-3.jpg" },
+  { title: "Sweetin Love Garden", price: 415000, category: "sweetin", view: 1, hot: 0, img: "./assets/images/product/sweetin/sweetin-4.jpg" },
 
   // Healthy (8 ảnh)
   { title: "Yogurt Granola Bowl", price: 99000, category: "healthy", view: 1, hot: 1, img: "./assets/images/product/healthy/healthy-1.jpg" },
@@ -60,7 +62,7 @@ let listProduct = [
   { title: "Sweetbox Pistachio", price: 345000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-10.jpg" },
   { title: "Sweetbox Almond", price: 355000, category: "sweetbox", view: 1, hot: 1, img: "./assets/images/product/sweetbox/sweetbox-11.jpg" },
   { title: "Sweetbox Red Velvet", price: 365000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-12.jpg" },
-  { title: "Sweetbox Trà Xanh", price: 325000, category: "sweetbox", view: 1, hot: 1, img: "./assets/images/product/sweetbox/sweetbox-13.jpg" },
+  // { title: "Sweetbox Trà Xanh", price: 325000, category: "sweetbox", view: 1, hot: 1, img: "./assets/images/product/sweetbox/sweetbox-13.jpg" },
 
   // Flan (4 ảnh)
   { title: "Flan Gato Berry Mix", price: 415000, category: "flan", view: 1, hot: 1, img: "./assets/images/product/flan/flan-1.jpg" },
@@ -81,7 +83,6 @@ function showProduct_SubNav(category) {
         </div>
       `;
     }
-    console.log("Fill");
   }
   document.getElementById("product-center-pd").innerHTML = html;
 }
