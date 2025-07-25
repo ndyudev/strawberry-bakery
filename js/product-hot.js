@@ -1,5 +1,5 @@
 let listProductHot = [
-  { title: "Strawberry Shortcake", price: 320000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-1.jpg" },
+  { title: "Strawberry Shortcake", price: 320000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-4.jpg" },
   { title: "Strawberry Cheese Mousse", price: 350000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-2.jpg" },
   { title: "Hazelnut Cookies", price: 115000, category: "cookies", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-7.jpg" },
   { title: "Coconut Cookies", price: 95000, category: "cookies", view: 1, hot: 0, img: "./assets/images/product/cookies/cookies-8.jpg" },
@@ -10,10 +10,10 @@ let listProductHot = [
 ];
 
 function renderHotProducts() {
-  let html = "";
+  let hotProduct = "";
   for (let i = 0; i < listProductHot.length; i++) {    
     if (listProductHot[i].hot == 1) {
-      html += `
+      hotProduct += `
         <div class="product">   
           <img src="${listProductHot[i].img}" alt="${listProductHot[i].title}">
           <h3 class="title-product">${listProductHot[i].title}</h3>
@@ -22,7 +22,7 @@ function renderHotProducts() {
       `;
     }
   }
-  document.querySelector(".hot-products").innerHTML = html;
+  document.querySelector(".hot-products").innerHTML = hotProduct;
 }
 renderHotProducts();
 

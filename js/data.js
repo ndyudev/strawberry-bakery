@@ -1,13 +1,13 @@
 let listProduct = [
   // Cakes (8 ảnh)
-  { title: "Strawberry Shortcake", price: 320000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-1.jpg" },
-  { title: "Strawberry Cheese Mousse", price: 350000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-2.jpg" },
-  { title: "Strawberry Tiramisu", price: 370000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-3.jpg" },
-  { title: "Strawberry Yogurt Cake", price: 340000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-4.jpg" },
-  { title: "Strawberry Chocolate Gateau", price: 390000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-5.jpg" },
-  { title: "Strawberry Cream Roll", price: 280000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-6.jpg" },
-  { title: "Strawberry Fresh Cream", price: 310000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/product-7.jpg" },
-  { title: "Strawberry Dream Cake", price: 360000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/product-8.jpg" },
+  { title: "Classic Butter Cookies", price: 95000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-1.jpg" },
+  { title: "Chocolate Chip Cookies", price: 105000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-2.jpg" },
+  { title: "Matcha Almond Cookies", price: 115000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-3.jpg" },
+  { title: "Sweetin Chocolate Ruby", price: 395000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-4.jpg" },
+  { title: "Sweetin Tiramisu Vải", price: 345000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-5.jpg" },
+  { title: "Sweetin Matcha Opera", price: 235000, category: "cakes", view: 1, hot: 1, img: "./assets/images/product/cakes/product-6.jpg" },
+  { title: "Sweetin Love Garden", price: 415000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-7.jpg" },
+  { title: "Coconut Cookies", price: 95000, category: "cakes", view: 1, hot: 0, img: "./assets/images/product/cakes/product-8.jpg" },
 
   // Cookies (9 ảnh)
   { title: "Classic Butter Cookies", price: 95000, category: "cookies", view: 1, hot: 1, img: "./assets/images/product/cookies/cookies-1.jpg" },
@@ -65,6 +65,6 @@ let listSubNav = [
   { title: "Sweetin", key: "sweetin" },
   { title: "Flan", key: "flan" },
   { title: "Cookies", key: "cookies" },
-  { title: "Cakes", key: "donuts" },
+  { title: "Cakes", key: "cakes" },
   { title: "Healthy", key: "healthy" },
 ];
