@@ -17,6 +17,8 @@ function renderBanner() {
 function nextBanner() {
   i_banner = (i_banner + 1) % listBanner.length;
   renderBanner();
+  console.log("Log");
+  
 }
 
 function prevBanner() {
