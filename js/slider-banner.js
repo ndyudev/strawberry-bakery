@@ -1,7 +1,10 @@
 let listBanner = [
-  { image: "../assets/images/banner/strawberry-bakery-banner.png" },
-  { image: "../assets/images/banner/strawberry-bakery-banner-2.png" },
-  { image: "../assets/images/banner/strawberry-bakery-banner-3.png" },
+
+{ image: "./assets/images/banner/strawberry-bakery-banner.png" },
+{ image: "./assets/images/banner/strawberry-bakery-banner-2.png" },
+{ image: "./assets/images/banner/strawberry-bakery-banner-3.png" },
+{ image: "./assets/images/banner/strawberry-bakery-banner-4.png" },
+{ image: "./assets/images/banner/strawberry-bakery-banner-5.png" },
 ];
 
 let i_banner = 0;
@@ -17,8 +20,6 @@ function renderBanner() {
 function nextBanner() {
   i_banner = (i_banner + 1) % listBanner.length;
   renderBanner();
-  console.log("Log");
-  
 }
 
 function prevBanner() {
@@ -34,4 +35,5 @@ function initBanner() {
 initBanner();
 
 setInterval(nextBanner, 3000);
+
 
