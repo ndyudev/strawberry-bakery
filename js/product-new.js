@@ -57,7 +57,14 @@ let listProduct = [
   { title: "Flan Gato Berry Mix", price: 415000, category: "flan", view: 1, hot: 1, img: "./assets/images/product/flan/flan-1.jpg" },
   { title: "Flan Gato Caramel", price: 75000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-2.jpg" },
   { title: "Flan Gato Trà Thái Đỏ", price: 435000, category: "flan", view: 1, hot: 1, img: "./assets/images/product/flan/flan-3.jpg" },
-  { title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" }
+  { title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" },
+
+
+  // Product New
+  { title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" },
+  { title: "Sweetbox Pistachio", price: 345000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-10.jpg" },
+  { title: "Yogurt Mật Ong", price: 95000, category: "healthy", view: 1, hot: 1, img: "./assets/images/product/healthy/healthy-5.jpg" },
+  { title: "Sweetin Matcha Opera", price: 235000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-3.jpg" },
 ];
 
 
@@ -70,7 +77,7 @@ function showLastProducts() {
     if (count >= 4) break;
     const p = listProduct[i];
 
-    productListNew += `s
+    productListNew += `
       <div class="product-card-pd">
         <img src="${p.img}" alt="pd${i}">
         <div class="title-pd">${p.title}</div>
@@ -80,7 +87,7 @@ function showLastProducts() {
     count++;
   }
 
-  document.querySelector("product-new").innerHTML = productListNew;
+  document.querySelector(".product-new-list").innerHTML = productListNew;
 }
 
 showLastProducts();
