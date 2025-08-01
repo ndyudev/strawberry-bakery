@@ -67,6 +67,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 /* Reset tất cả thẻ HTML về 0, dùng border-box để tính kích thước chuẩn */
 
