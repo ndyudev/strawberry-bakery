@@ -5,6 +5,8 @@
 @import "./sections/footer.css";
 @import "./sections/responsive.css";
 @import "./sections/product.css";
+@import "./sections/product-detail.css";
+
 
 :root {
   /* -------- Typography - Cỡ chữ -------- */

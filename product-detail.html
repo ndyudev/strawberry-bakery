@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strawberry Bakery</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/logo/strawberry-bakery-logo.svg" />
+    <script
+      src="https://kit.fontawesome.com/f4e3fc99b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <script src="./js/fill-data-product.js"></script>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <img
+            src="./assets/images/logo/strawberry-bakery-logo.svg"
+            alt="Strawberry bakery logo"
+          />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="product.html">
+                Menu
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav" id="subnav-list">
+                <!-- Sub nav -->
+              </ul>
+            </li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="product-detail">
+        <!-- Navigation bar -->
+        <div class="product-detail__nav">
+          <div class="product-detail__nav-left">
+            <button class="nav-btn prev-btn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next-btn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="product-detail__nav-right">
+            <a href="product.html" class="show-all-btn">
+              <i class="fa-solid fa-bars"></i>
+              Show all
+            </a>
+          </div>
+        </div>
+
+        <div class="product-detail__container">
+          <!-- Cột trái: Ảnh sản phẩm -->
+          <div class="product-detail__images">
+            <div class="main-image">
+              <img src="./assets/images/product/sweetin/sweetin-1.jpg" alt="Sweetin – Chocolate Ruby">
+            </div>
+            <div class="thumbnail-images">
+              <div class="thumbnail active">
+                <img src="./assets/images/product/sweetin/sweetin-1.jpg" alt="Sweetin – Chocolate Ruby">
+              </div>
+              <div class="thumbnail">
+                <img src="./assets/images/product/sweetin/sweetin-2.jpg" alt="Sweetin – Chocolate Ruby">
+              </div>
+              <div class="thumbnail">
+                <img src="./assets/images/product/sweetin/sweetin-3.jpg" alt="Sweetin – Chocolate Ruby">
+              </div>
+              <div class="thumbnail">
+                <img src="./assets/images/product/sweetin/sweetin-4.jpg" alt="Sweetin – Chocolate Ruby">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cột phải: Thông tin sản phẩm -->
+          <div class="product-detail__info">
+            <h1 class="product-title">Sweetin – Chocolate Ruby</h1>
+            <div class="product-price">395.000 ₫</div>
+            
+            <div class="product-description">
+              <p class="product-flavor"><strong>Hương vị:</strong> Đắng nhẹ – ngọt dịu – đậm vị socola</p>
+              
+              <div class="product-details">
+                <p><strong>Cấu trúc bánh:</strong></p>
+                <p>Bánh được trang trí những trái cherry tươi đỏ mọng cao cấp.</p>
+                <p>Bánh gồm 5 lớp (từ dưới lên trên):</p>
+                <ul>
+                  <li>+ Lớp bánh bông lan mềm.</li>
+                  <li>+ Lớp hạt điều nướng.</li>
+                  <li>+ Mousse chocolate nguyên chất.</li>
+                  <li>+ Ganache chocolate đen và lớp chocolate đập giòn.</li>
+                </ul>
+                
+                <p><strong>Bảo quản:</strong> Bánh nên được dùng trong ngày và ngon hơn khi bảo quản lạnh trước khi thưởng thức.</p>
+                
+                <p><strong>Phụ kiện tặng kèm:</strong></p>
+                <ul>
+                  <li>+ 1 thìa lá bạc</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="product-category">
+              <span><strong>Phân loại:</strong> Bánh hủ thiếc</span>
+            </div>
+            
+            <div class="product-options">
+              <div class="quantity-selector">
+                <label>Sweetin – Chocolate Ruby số lượng</label>
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="number" value="1" min="1" class="quantity-input">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+              
+              <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+            </div>
+            
+            <div class="product-meta">
+              <p><strong>Danh mục:</strong> Sweetin - Bánh hộp thiếc cao cấp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <img
+              src="assets/images/logo/strawberry-bakery-logo.svg"
+              alt="Bakery Logo"
+            />
+            <p>Sweet moments made with love 🍓</p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>🍰 227 Bach Dang, Ho Chi Minh City</p>
+            <p>📧 sales@strawberrybakery.com</p>
+            <p>📞 (+84) 787 544 232</p>
+          </div>
+
+          <!-- Socials -->
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Strawberry Bakery 🍓. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/subnav-data.js"></script>
+    <script src="./js/slider-banner.js"></script>
+    <script type="module" src="./js/product-hot.js"></script>
+    <script type="module" src="./js/fill-data-product.js"></script>
+    <script type="module" src="./js/data-product.js"></script>
+    <script type="module" src="./js/product-new.js"></script>
+  </body>
+</html>
