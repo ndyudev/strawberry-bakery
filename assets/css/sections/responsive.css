@@ -36,3 +36,28 @@
     align-items: flex-start;
   }
 }
+
+/* === RESPONSIVE FOR ADDITIONAL SECTIONS === */
+@media (max-width: 768px) {
+  .product-detail__additional {
+    padding: 0 1rem;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+
+  .related-products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .related-product__image {
+    height: 200px;
+  }
+}
