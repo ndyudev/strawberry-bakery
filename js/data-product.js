@@ -1,6 +1,7 @@
 let listProduct = [
   // Cakes (8 ảnh)
   {
+    id: 1,
     title: "Classic Butter Cookies",
     price: 95000,
     category: "cakes",
@@ -9,6 +10,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-1.jpg",
   },
   {
+    id: 2,
     title: "Chocolate Chip Cookies",
     price: 105000,
     category: "cakes",
@@ -17,6 +19,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-2.jpg",
   },
   {
+    id: 3,
     title: "Matcha Almond Cookies",
     price: 115000,
     category: "cakes",
@@ -25,6 +28,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-3.jpg",
   },
   {
+    id: 4,
     title: "Sweetin Chocolate Ruby",
     price: 395000,
     category: "cakes",
@@ -33,6 +37,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-4.jpg",
   },
   {
+    id: 5,
     title: "Sweetin Tiramisu Vải",
     price: 345000,
     category: "cakes",
@@ -41,6 +46,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-5.jpg",
   },
   {
+    id: 6,
     title: "Sweetin Matcha Opera",
     price: 235000,
     category: "cakes",
@@ -49,6 +55,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-6.jpg",
   },
   {
+    id: 7,
     title: "Sweetin Love Garden",
     price: 415000,
     category: "cakes",
@@ -57,6 +64,7 @@ let listProduct = [
     img: "./assets/images/product/cakes/product-7.jpg",
   },
   {
+    id: 8,
     title: "Coconut Cookies",
     price: 95000,
     category: "cakes",
@@ -67,6 +75,7 @@ let listProduct = [
 
   // Cookies (9 ảnh)
   {
+    id: 9,
     title: "Classic Butter Cookies",
     price: 95000,
     category: "cookies",
@@ -75,6 +84,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-1.jpg",
   },
   {
+    id: 10,
     title: "Chocolate Chip Cookies",
     price: 105000,
     category: "cookies",
@@ -83,6 +93,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-2.jpg",
   },
   {
+    id: 11,
     title: "Matcha Almond Cookies",
     price: 115000,
     category: "cookies",
@@ -91,6 +102,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-3.jpg",
   },
   {
+    id: 12,
     title: "Cranberry Oatmeal Cookies",
     price: 110000,
     category: "cookies",
@@ -99,6 +111,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-4.jpg",
   },
   {
+    id: 13,
     title: "Red Velvet Cookies",
     price: 120000,
     category: "cookies",
@@ -107,6 +120,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-5.jpg",
   },
   {
+    id: 14,
     title: "Pistachio Cookies",
     price: 125000,
     category: "cookies",
@@ -115,6 +129,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-6.jpg",
   },
   {
+    id: 15,
     title: "Hazelnut Cookies",
     price: 115000,
     category: "cookies",
@@ -123,6 +138,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-7.jpg",
   },
   {
+    id: 16,
     title: "Coconut Cookies",
     price: 95000,
     category: "cookies",
@@ -131,6 +147,7 @@ let listProduct = [
     img: "./assets/images/product/cookies/cookies-8.jpg",
   },
   {
+    id: 17,
     title: "Coffee Bean Cookies",
     price: 105000,
     category: "cookies",
@@ -141,6 +158,7 @@ let listProduct = [
 
   // Sweetin (6 ảnh)
   {
+    id: 18,
     title: "Sweetin Chocolate Ruby",
     price: 395000,
     category: "sweetin",
@@ -149,6 +167,7 @@ let listProduct = [
     img: "./assets/images/product/sweetin/sweetin-1.jpg",
   },
   {
+    id: 19,
     title: "Sweetin Tiramisu Vải",
     price: 345000,
     category: "sweetin",
@@ -157,6 +176,7 @@ let listProduct = [
     img: "./assets/images/product/sweetin/sweetin-2.jpg",
   },
   {
+    id: 20,
     title: "Sweetin Matcha Opera",
     price: 235000,
     category: "sweetin",
@@ -165,6 +185,7 @@ let listProduct = [
     img: "./assets/images/product/sweetin/sweetin-3.jpg",
   },
   {
+    id: 21,
     title: "Sweetin Love Garden",
     price: 415000,
     category: "sweetin",
@@ -173,6 +194,7 @@ let listProduct = [
     img: "./assets/images/product/sweetin/sweetin-4.jpg",
   },
   {
+    id: 22,
     title: "Sweetin Caramel Mousse",
     price: 255000,
     category: "sweetin",
@@ -181,6 +203,7 @@ let listProduct = [
     img: "./assets/images/product/sweetin/sweetin-5.jpg",
   },
   {
+    id: 23,
     title: "Sweetin Berry Mix",
     price: 265000,
     category: "sweetin",
@@ -191,6 +214,7 @@ let listProduct = [
 
   // Healthy (8 ảnh)
   {
+    id: 24,
     title: "Yogurt Granola Bowl",
     price: 99000,
     category: "healthy",
@@ -199,6 +223,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-1.jpg",
   },
   {
+    id: 25,
     title: "Oatmeal Dâu Tươi",
     price: 109000,
     category: "healthy",
@@ -207,6 +232,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-2.jpg",
   },
   {
+    id: 26,
     title: "Healthy Chia Pudding",
     price: 89000,
     category: "healthy",
@@ -215,6 +241,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-3.jpg",
   },
   {
+    id: 27,
     title: "Salad Trái Cây",
     price: 79000,
     category: "healthy",
@@ -223,6 +250,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-4.jpg",
   },
   {
+    id: 28,
     title: "Yogurt Mật Ong",
     price: 95000,
     category: "healthy",
@@ -231,6 +259,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-5.jpg",
   },
   {
+    id: 29,
     title: "Smoothie Bowl",
     price: 99000,
     category: "healthy",
@@ -239,6 +268,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-6.jpg",
   },
   {
+    id: 30,
     title: "Healthy Mix Nuts",
     price: 119000,
     category: "healthy",
@@ -247,6 +277,7 @@ let listProduct = [
     img: "./assets/images/product/healthy/healthy-7.jpg",
   },
   {
+    id: 31,
     title: "Bánh Yến Mạch",
     price: 79000,
     category: "healthy",
@@ -257,6 +288,7 @@ let listProduct = [
 
   // Sweetbox (13 ảnh)
   {
+    id: 32,
     title: "Sweetbox Signature 8 vị",
     price: 295000,
     category: "sweetbox",
@@ -265,6 +297,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-1.jpg",
   },
   {
+    id: 33,
     title: "Sweetbox Signature 16 vị",
     price: 495000,
     category: "sweetbox",
@@ -273,6 +306,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-2.jpg",
   },
   {
+    id: 34,
     title: "Sweetbox Love 12 vị",
     price: 415000,
     category: "sweetbox",
@@ -281,6 +315,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-3.jpg",
   },
   {
+    id: 35,
     title: "Sweetbox Love Garden",
     price: 595000,
     category: "sweetbox",
@@ -289,6 +324,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-4.jpg",
   },
   {
+    id: 36,
     title: "Sweetbox Chocolate",
     price: 325000,
     category: "sweetbox",
@@ -297,6 +333,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-5.jpg",
   },
   {
+    id: 37,
     title: "Sweetbox Mix Nuts",
     price: 355000,
     category: "sweetbox",
@@ -305,6 +342,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-6.jpg",
   },
   {
+    id: 38,
     title: "Sweetbox Berry",
     price: 375000,
     category: "sweetbox",
@@ -313,6 +351,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-7.jpg",
   },
   {
+    id: 39,
     title: "Sweetbox Caramel",
     price: 315000,
     category: "sweetbox",
@@ -321,6 +360,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-8.jpg",
   },
   {
+    id: 40,
     title: "Sweetbox Hazelnut",
     price: 335000,
     category: "sweetbox",
@@ -329,6 +369,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-9.jpg",
   },
   {
+    id: 41,
     title: "Sweetbox Pistachio",
     price: 345000,
     category: "sweetbox",
@@ -337,6 +378,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-10.jpg",
   },
   {
+    id: 42,
     title: "Sweetbox Almond",
     price: 355000,
     category: "sweetbox",
@@ -345,6 +387,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-11.jpg",
   },
   {
+    id: 43,
     title: "Sweetbox Red Velvet",
     price: 365000,
     category: "sweetbox",
@@ -353,6 +396,7 @@ let listProduct = [
     img: "./assets/images/product/sweetbox/sweetbox-12.jpg",
   },
   {
+    id: 44,
     title: "Sweetbox Trà Xanh",
     price: 325000,
     category: "sweetbox",
@@ -363,6 +407,7 @@ let listProduct = [
 
   // Flan (4 ảnh)
   {
+    id: 45,
     title: "Flan Gato Berry Mix",
     price: 415000,
     category: "flan",
@@ -371,6 +416,7 @@ let listProduct = [
     img: "./assets/images/product/flan/flan-1.jpg",
   },
   {
+    id: 46,
     title: "Flan Gato Caramel",
     price: 75000,
     category: "flan",
@@ -379,6 +425,7 @@ let listProduct = [
     img: "./assets/images/product/flan/flan-2.jpg",
   },
   {
+    id: 47,
     title: "Flan Gato Trà Thái Đỏ",
     price: 435000,
     category: "flan",
@@ -387,6 +434,7 @@ let listProduct = [
     img: "./assets/images/product/flan/flan-3.jpg",
   },
   {
+    id: 48,
     title: "Flan Gato Mè Đen",
     price: 425000,
     category: "flan",
@@ -402,7 +450,7 @@ let productList = "";
 function showProduct() {
   for (let i = 0; i < listProduct.length; i++) {
     productList += `
-    <a href="product-detail.html?index=${i}" class="product-card-pd">
+    <a href="product-detail.html?id=${listProduct[i].id}" class="product-card-pd">
       <img src="${listProduct[i].img}" alt="pd${i + 1}">
       <div class="title-pd">${listProduct[i].title}</div>
       <div class="price-pd">${listProduct[i].price.toLocaleString()} đ</div>

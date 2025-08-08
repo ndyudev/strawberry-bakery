@@ -61,10 +61,10 @@ let listProduct = [
 
 
   // Product New
-  { title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" },
-  { title: "Sweetbox Pistachio", price: 345000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-10.jpg" },
-  { title: "Yogurt Mật Ong", price: 95000, category: "healthy", view: 1, hot: 1, img: "./assets/images/product/healthy/healthy-5.jpg" },
-  { title: "Sweetin Matcha Opera", price: 235000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-3.jpg" },
+  { id: 48, title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" },
+  { id: 41, title: "Sweetbox Pistachio", price: 345000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-10.jpg" },
+  { id: 28, title: "Yogurt Mật Ong", price: 95000, category: "healthy", view: 1, hot: 1, img: "./assets/images/product/healthy/healthy-5.jpg" },
+  { id: 6, title: "Sweetin Matcha Opera", price: 235000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-3.jpg" },
 ];
 
 
@@ -78,11 +78,13 @@ function showLastProducts() {
     const p = listProduct[i];
 
     productListNew += `
-      <div class="product-card-pd">
-        <img src="${p.img}" alt="pd${i}">
-        <div class="title-pd">${p.title}</div>
-        <div class="price-pd">${p.price.toLocaleString()} đ</div>
-      </div>
+      <a href="product-detail.html?id=${p.id}" class="product-link">
+        <div class="product-card-pd">
+          <img src="${p.img}" alt="pd${i}">
+          <div class="title-pd">${p.title}</div>
+          <div class="price-pd">${p.price.toLocaleString()} đ</div>
+        </div>
+      </a>
     `;
     count++;
   }
