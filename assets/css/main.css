@@ -6,6 +6,7 @@
 @import "./sections/responsive.css";
 @import "./sections/product.css";
 @import "./sections/product-detail.css";
+@import "./sections/cart.css";
 
 
 :root {

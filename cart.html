@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng - Strawberry Bakery</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/logo/strawberry-bakery-logo.svg" />
+    <script
+      src="https://kit.fontawesome.com/f4e3fc99b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/subnav-data.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <img
+            src="./assets/images/logo/strawberry-bakery-logo.svg"
+            alt="Strawberry bakery logo"
+          />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="product.html">
+                Menu <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav" id="subnav-list"></ul>
+            </li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      <div class="cart_detail">
+        <!-- Progress Indicator -->
+        <div class="checkout-progress">
+          <div class="progress-container">
+            <div class="progress-step active">
+              <div class="step-number">1</div>
+              <span>Giỏ hàng</span>
+            </div>
+            <div class="progress-step">
+              <div class="step-number">2</div>
+              <span>Thanh toán</span>
+            </div>
+            <div class="progress-step">
+              <div class="step-number">3</div>
+              <span>Đơn hàng</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Message -->
+        <div class="success-message">
+          <div class="message-container">
+            <div class="message-content">
+              <div class="check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <span>"Hộp Trung thu Trăng Yên" đã được thêm vào giỏ hàng.</span>
+            </div>
+            <div class="message-actions">
+              <a href="product.html" class="continue-shopping"
+                >Tiếp tục xem sản phẩm</a
+              >
+              <button class="close-message">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Cart Section -->
+        <main class="cart-main">
+          <div class="cart-container">
+            <!-- Cart Items -->
+            <div class="cart-items">
+              <div class="cart-header">
+                <div class="header-product">SẢN PHẨM</div>
+                <div class="header-price">GIÁ</div>
+                <div class="header-quantity">SỐ LƯỢNG</div>
+                <div class="header-subtotal">TẠM TÍNH</div>
+              </div>
+
+              <div class="cart-item">
+                <div class="item-product">
+                  <img
+                    src="assets/images/product/cakes/product-1.jpg"
+                    alt="Hộp Trung thu Trăng Yên"
+                  />
+                  <div class="item-info">
+                    <h3>Hộp Trung thu Trăng Yên</h3>
+                    <p class="item-description">
+                      Bánh trung thu truyền thống với hương vị đặc biệt
+                    </p>
+                  </div>
+                </div>
+                <div class="item-price">730.000 ₫</div>
+                <div class="item-quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                  />
+                  <button class="quantity-btn plus">+</button>
+                </div>
+                <div class="item-subtotal">
+                  <span>730.000 ₫</span>
+                  <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="item-product">
+                  <img
+                    src="assets/images/product/cakes/product-1.jpg"
+                    alt="Hộp Trung thu Trăng Yên"
+                  />
+                  <div class="item-info">
+                    <h3>Hộp Trung thu Trăng Yên</h3>
+                    <p class="item-description">
+                      Bánh trung thu truyền thống với hương vị đặc biệt
+                    </p>
+                  </div>
+                </div>
+                <div class="item-price">730.000 ₫</div>
+                <div class="item-quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                  />
+                  <button class="quantity-btn plus">+</button>
+                </div>
+                <div class="item-subtotal">
+                  <span>730.000 ₫</span>
+                  <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="item-product">
+                  <img
+                    src="assets/images/product/cakes/product-1.jpg"
+                    alt="Hộp Trung thu Trăng Yên"
+                  />
+                  <div class="item-info">
+                    <h3>Hộp Trung thu Trăng Yên</h3>
+                    <p class="item-description">
+                      Bánh trung thu truyền thống với hương vị đặc biệt
+                    </p>
+                  </div>
+                </div>
+                <div class="item-price">730.000 ₫</div>
+                <div class="item-quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                  />
+                  <button class="quantity-btn plus">+</button>
+                </div>
+                <div class="item-subtotal">
+                  <span>730.000 ₫</span>
+                  <button class="remove-item">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Discount Code -->
+              <div class="discount-section">
+                <div class="discount-input">
+                  <input
+                    type="text"
+                    placeholder="MÃ ƯU ĐÃI"
+                    class="coupon-input"
+                  />
+                  <button class="apply-coupon">Áp dụng</button>
+                </div>
+                <button class="update-cart">Cập nhật giỏ hàng</button>
+              </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+              <h3>Cộng giỏ hàng</h3>
+              <div class="summary-row">
+                <span>Tạm tính:</span>
+                <span>730.000 ₫</span>
+              </div>
+              <div class="summary-row shipping">
+                <span>Giao hàng:</span>
+                <span>150.000 ₫</span>
+              </div>
+              <div class="shipping-info">
+                <p>Vận chuyển đến Huyện U Minh, Cà Mau.</p>
+                <a href="#" class="change-address">
+                  <span>🚚</span>
+                  Đổi địa chỉ
+                </a>
+              </div>
+              <div class="summary-row total">
+                <span>Tổng:</span>
+                <span>880.000 ₫</span>
+              </div>
+              <button class="checkout-btn">Tiến hành thanh toán</button>
+              <a href="product.html" class="continue-link"
+                >Tiếp tục xem sản phẩm</a
+              >
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <img
+              src="assets/images/logo/strawberry-bakery-logo.svg"
+              alt="Bakery Logo"
+            />
+            <p>Sweet moments made with love 🍓</p>
+          </div>
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>🍰 227 Bach Dang, Ho Chi Minh City</p>
+            <p>📧 sales@strawberrybakery.com</p>
+            <p>📞 (+84) 787 544 232</p>
+          </div>
+          <!-- Socials -->
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Strawberry Bakery 🍓. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
