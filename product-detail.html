@@ -10,12 +10,16 @@
       src="https://kit.fontawesome.com/f4e3fc99b3.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./js/subnav-data.js"></script>
+    <script type="module" src="./js/product-detail.js"></script>
+    <script src="./js/fill-data-product.js"></script>
+    <script src="./js/product-detail.js"></script>
+    <script src="./js/change-img-product.js"></script>
   </head>
-  <script src="./js/fill-data-product.js"></script>
   <body>
     <div class="container">
       <!-- Header -->
-      <div class="header">
+      <header class="header">
         <div class="logo">
           <img
             src="./assets/images/logo/strawberry-bakery-logo.svg"
@@ -27,12 +31,9 @@
             <li><a href="index.html">Home</a></li>
             <li>
               <a href="product.html">
-                Menu
-                <i class="fa-solid fa-caret-down"></i>
+                Menu <i class="fa-solid fa-caret-down"></i>
               </a>
-              <ul class="subnav" id="subnav-list">
-                <!-- Sub nav -->
-              </ul>
+              <ul class="subnav" id="subnav-list"></ul>
             </li>
             <li><a href="#">Delivery</a></li>
             <li><a href="#">About</a></li>
@@ -42,9 +43,10 @@
         <div class="menu-toggle" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </div>
-      </div>
+      </header>
 
-      <div class="product-detail">
+      <!-- Product Detail -->
+      <section class="product-detail">
         <!-- Navigation bar -->
         <div class="product-detail__nav">
           <div class="product-detail__nav-left">
@@ -57,45 +59,40 @@
           </div>
           <div class="product-detail__nav-right">
             <a href="product.html" class="show-all-btn">
-              <i class="fa-solid fa-bars"></i>
-              Show all
+              <i class="fa-solid fa-bars"></i> Show all
             </a>
           </div>
         </div>
 
         <div class="product-detail__container">
-          <!-- Cột trái: Ảnh sản phẩm -->
+          <!-- Left Column: Images -->
           <div class="product-detail__images">
-            <div class="main-image">
-              <img src="./assets/images/product/sweetin/sweetin-1.jpg" alt="Sweetin – Chocolate Ruby">
+            <div class="main-image data-imgMain">
+              <!-- <img
+                src="./assets/images/product/sweetin/sweetin-1.jpg"
+                alt="Sweetin – Chocolate Ruby"
+              /> -->
+              <!-- Fill image main -->
             </div>
-            <div class="thumbnail-images">
-              <div class="thumbnail active">
-                <img src="./assets/images/product/sweetin/sweetin-1.jpg" alt="Sweetin – Chocolate Ruby">
-              </div>
-              <div class="thumbnail">
-                <img src="./assets/images/product/sweetin/sweetin-2.jpg" alt="Sweetin – Chocolate Ruby">
-              </div>
-              <div class="thumbnail">
-                <img src="./assets/images/product/sweetin/sweetin-3.jpg" alt="Sweetin – Chocolate Ruby">
-              </div>
-              <div class="thumbnail">
-                <img src="./assets/images/product/sweetin/sweetin-4.jpg" alt="Sweetin – Chocolate Ruby">
-              </div>
+            <div class="thumbnail-images fill-thumbnail-images">
+              <!-- Fill thumbnail images-->
             </div>
           </div>
-          
-          <!-- Cột phải: Thông tin sản phẩm -->
+
+          <!-- Right Column: Info -->
           <div class="product-detail__info">
-            <h1 class="product-title">Sweetin – Chocolate Ruby</h1>
-            <div class="product-price">395.000 ₫</div>
-            
+            <h1 class="product-title product_detail_title"></h1>
+            <div class="product-price product_detail_price"></div>
+
             <div class="product-description">
-              <p class="product-flavor"><strong>Hương vị:</strong> Đắng nhẹ – ngọt dịu – đậm vị socola</p>
-              
+              <p class="product-flavor">
+                <strong>Hương vị:</strong> Đắng nhẹ – ngọt dịu – đậm vị socola
+              </p>
               <div class="product-details">
                 <p><strong>Cấu trúc bánh:</strong></p>
-                <p>Bánh được trang trí những trái cherry tươi đỏ mọng cao cấp.</p>
+                <p>
+                  Bánh được trang trí những trái cherry tươi đỏ mọng cao cấp.
+                </p>
                 <p>Bánh gồm 5 lớp (từ dưới lên trên):</p>
                 <ul>
                   <li>+ Lớp bánh bông lan mềm.</li>
@@ -103,130 +100,74 @@
                   <li>+ Mousse chocolate nguyên chất.</li>
                   <li>+ Ganache chocolate đen và lớp chocolate đập giòn.</li>
                 </ul>
-                
-                <p><strong>Bảo quản:</strong> Bánh nên được dùng trong ngày và ngon hơn khi bảo quản lạnh trước khi thưởng thức.</p>
-                
+                <p>
+                  <strong>Bảo quản:</strong> Bánh nên được dùng trong ngày và
+                  ngon hơn khi bảo quản lạnh trước khi thưởng thức.
+                </p>
                 <p><strong>Phụ kiện tặng kèm:</strong></p>
                 <ul>
                   <li>+ 1 thìa lá bạc</li>
                 </ul>
               </div>
             </div>
-            
+
             <div class="product-category">
               <span><strong>Phân loại:</strong> Bánh hủ thiếc</span>
             </div>
-            
+
             <div class="product-options">
               <div class="quantity-selector">
                 <label>Sweetin – Chocolate Ruby số lượng</label>
                 <div class="quantity-controls">
                   <button class="quantity-btn minus">-</button>
-                  <input type="number" value="1" min="1" class="quantity-input">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                  />
                   <button class="quantity-btn plus">+</button>
                 </div>
               </div>
-              
               <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
             </div>
-            
+
             <div class="product-meta">
               <p><strong>Danh mục:</strong> Sweetin - Bánh hộp thiếc cao cấp</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Product Description & Related Products -->
-      <div class="product-detail__additional">
-        <div class="product-detail__tabs">
-          <div class="tab-buttons">
-            <button class="tab-btn active" data-tab="description">Mô tả</button>
-            <button class="tab-btn" data-tab="additional">Thông tin bổ sung</button>
-          </div>
-          
-          <div class="tab-content">
-            <div class="tab-panel active" id="description">
-              <div class="product-description-content">
-                <p>Sweetin là dòng bánh mà Strawberry Bakery chiếm ưu thế về sản lượng cung cấp cho thị trường Hồ Chí Minh. Bánh có hương vị ngon lành nên người dùng ở mọi lứa tuổi đều yêu thích.</p>
-                
-                <p>Bánh có năm lớp chính, đó là bánh bông lan mềm, hạt điều nướng, mousse chocolate nguyên chất, ganache chocolate đen và lớp chocolate đập giòn. Năm lớp bánh với năm hương vị khác nhau nhưng khi kết hợp tạo nên một chiếc bánh ngon nịnh vị và khi dùng thực khách không có cảm giác ngán.</p>
-                
-                <p>Sweetin Chocolate Ruby là mẫu bánh được trang trí với những trái cherry tươi đỏ mọng cao cấp. Điểm tô cho chiếc bánh thêm đủ đầy là lớp chocolate đập giòn, cũng làm tôn lên màu sắc tươi tắn của cherry.</p>
-                
-                <p>Bánh Sweetin Chocolate Ruby được nhiều khách hàng chọn lựa, đặc biệt là trong những tiệc gia đình, tiệc sinh nhật. Vì ngoài vừa ngon vừa đẹp mắt thì khách hàng có thể chọn bộ phụ kiện tặng kèm đáng yêu.</p>
-                
-                <div class="related-categories">
-                  <h4>Xem thêm các loại bánh khác:</h4>
-                  <ul>
-                    <li><a href="#">Bánh kem sinh nhật</a></li>
-                    <li><a href="#">Bánh Mousse</a></li>
-                    <li><a href="#">Bánh Entremet</a></li>
-                    <li><a href="#">Bánh kem bắp</a></li>
-                    <li><a href="#">Bánh Trung Thu</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="tab-panel" id="additional">
-              <div class="product-specs">
-                <table class="specs-table">
-                  <tr>
-                    <td><strong>Kích cỡ</strong></td>
-                    <td>20cm, 24cm, 28cm</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Bảo quản</strong></td>
-                    <td>Bánh nên được dùng trong ngày và ngon hơn khi bảo quản lạnh trước khi thưởng thức</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Phụ kiện</strong></td>
-                    <td>1 thìa lá bạc</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
+      <section class="product-detail__additional">
+        <div class="product-description-content">
+          <h3>Mô tả</h3>
+          <p>Sweetin là dòng bánh mà Strawberry Bakery chiếm ưu thế...</p>
+          <p>Bánh có năm lớp chính...</p>
+          <p>Sweetin Chocolate Ruby là mẫu bánh được trang trí...</p>
+          <p>
+            Bánh Sweetin Chocolate Ruby được nhiều khách hàng chọn lựa...
+          </p>
+          <div class="related-categories">
+            <h4>Xem thêm các loại bánh khác:</h4>
+            <ul>
+              <li><a href="#">Bánh kem sinh nhật</a></li>
+              <li><a href="#">Bánh Mousse</a></li>
+              <li><a href="#">Bánh Entremet</a></li>
+              <li><a href="#">Bánh kem bắp</a></li>
+              <li><a href="#">Bánh Trung Thu</a></li>
+            </ul>
           </div>
         </div>
-        
+
         <!-- Related Products -->
         <div class="related-products">
           <h3>Sản phẩm tương tự</h3>
-          <div class="related-products-grid">
-            <div class="related-product">
-              <div class="related-product__image">
-                <img src="./assets/images/product/sweetin/sweetin-2.jpg" alt="Sweetin – Vanilla Dream">
-              </div>
-              <div class="related-product__info">
-                <h4>Sweetin – Vanilla Dream</h4>
-                <div class="related-product__price">385.000 ₫</div>
-              </div>
-            </div>
-            
-            <div class="related-product">
-              <div class="related-product__image">
-                <img src="./assets/images/product/sweetin/sweetin-3.jpg" alt="Sweetin – Berry Mix">
-              </div>
-              <div class="related-product__info">
-                <h4>Sweetin – Berry Mix</h4>
-                <div class="related-product__price">405.000 ₫</div>
-              </div>
-            </div>
-            
-            <div class="related-product">
-              <div class="related-product__image">
-                <img src="./assets/images/product/sweetin/sweetin-4.jpg" alt="Sweetin – Coffee Delight">
-              </div>
-              <div class="related-product__info">
-                <h4>Sweetin – Coffee Delight</h4>
-                <div class="related-product__price">415.000 ₫</div>
-              </div>
-            </div>
+          <div class="related-products-grid related-product-fill">
+            <!-- Fill product related-->
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
       <!-- Footer -->
       <footer class="footer">
@@ -239,7 +180,6 @@
             />
             <p>Sweet moments made with love 🍓</p>
           </div>
-
           <!-- Navigation -->
           <div class="footer-links">
             <h4>Menu</h4>
@@ -251,7 +191,6 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-
           <!-- Contact -->
           <div class="footer-contact">
             <h4>Contact Us</h4>
@@ -259,7 +198,6 @@
             <p>📧 sales@strawberrybakery.com</p>
             <p>📞 (+84) 787 544 232</p>
           </div>
-
           <!-- Socials -->
           <div class="footer-socials">
             <h4>Follow Us</h4>
@@ -275,33 +213,5 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="./main.js"></script>
-    <script type="module" src="./js/subnav-data.js"></script>
-    <script src="./js/slider-banner.js"></script>
-    <script type="module" src="./js/product-hot.js"></script>
-    <script type="module" src="./js/fill-data-product.js"></script>
-    <script type="module" src="./js/data-product.js"></script>
-    <script type="module" src="./js/product-new.js"></script>
-    <script>
-      // Tab functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabPanels = document.querySelectorAll('.tab-panel');
-        
-        tabButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            const targetTab = button.getAttribute('data-tab');
-            
-            // Remove active class from all buttons and panels
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabPanels.forEach(panel => panel.classList.remove('active'));
-            
-            // Add active class to clicked button and corresponding panel
-            button.classList.add('active');
-            document.getElementById(targetTab).classList.add('active');
-          });
-        });
-      });
-    </script>
   </body>
 </html>
