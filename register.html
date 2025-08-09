@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký - Strawberry Bakery</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/logo/strawberry-bakery-logo.svg" />
+    <script
+      src="https://kit.fontawesome.com/f4e3fc99b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/subnav-data.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <img
+            src="./assets/images/logo/strawberry-bakery-logo.svg"
+            alt="Strawberry bakery logo"
+          />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="product.html">
+                Menu <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav" id="subnav-list"></ul>
+            </li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      <!-- Register Section -->
+      <section class="register-section">
+        <div class="auth-container">
+          <div class="auth-box">
+            <div class="auth-header">
+              <h1>Đăng ký</h1>
+              <p>Tạo tài khoản mới để trải nghiệm Strawberry Bakery! 🍓</p>
+            </div>
+
+            <form class="auth-form" id="registerForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Họ:</label>
+                  <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    required 
+                    placeholder="Nguyễn"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Tên:</label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    required 
+                    placeholder="Văn A"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  placeholder="example@email.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  required 
+                  placeholder="0901234567"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="password">Mật khẩu:</label>
+                  <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required 
+                    placeholder="Tối thiểu 6 ký tự"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                  <input 
+                    type="password" 
+                    id="confirmPassword" 
+                    name="confirmPassword" 
+                    required 
+                    placeholder="Nhập lại mật khẩu"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="birthDate">Ngày sinh:</label>
+                <input 
+                  type="date" 
+                  id="birthDate" 
+                  name="birthDate" 
+                  required 
+                />
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="agreeTerms" required>
+                  <span class="checkmark"></span>
+                  Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a>
+                </label>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="newsletter">
+                  <span class="checkmark"></span>
+                  Nhận thông báo về sản phẩm mới và khuyến mãi
+                </label>
+              </div>
+
+              <button type="submit" class="auth-btn">Đăng ký</button>
+
+              <div class="auth-divider">
+                <span>Hoặc</span>
+              </div>
+
+              <div class="social-login">
+                <button type="button" class="social-btn facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  Đăng ký bằng Facebook
+                </button>
+                <button type="button" class="social-btn google">
+                  <i class="fa-brands fa-google"></i>
+                  Đăng ký bằng Google
+                </button>
+              </div>
+
+              <div class="auth-switch">
+                <p>Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <img
+              src="assets/images/logo/strawberry-bakery-logo.svg"
+              alt="Bakery Logo"
+            />
+            <p>Sweet moments made with love 🍓</p>
+          </div>
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="product.html">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>🍰 227 Bach Dang, Ho Chi Minh City</p>
+            <p>📧 sales@strawberrybakery.com</p>
+            <p>📞 (+84) 787 544 232</p>
+          </div>
+          <!-- Socials -->
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Strawberry Bakery 🍓. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>
