@@ -17,6 +17,7 @@
 .register-section .checkbox-label a {
   color: var(--color-primary);
   text-decoration: none;
+  padding: 5px;
 }
 
 .register-section .checkbox-label a:hover {
