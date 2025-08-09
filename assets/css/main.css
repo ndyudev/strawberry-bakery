@@ -7,6 +7,8 @@
 @import "./sections/product.css";
 @import "./sections/product-detail.css";
 @import "./sections/cart.css";
+@import "./sections/login.css";
+@import "./sections/register.css";
 
 
 :root {

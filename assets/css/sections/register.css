@@ -1,0 +1,31 @@
+/* Register specific additional styles */
+/* The main styles are shared with login.css */
+
+.register-section .auth-container {
+  max-width: 600px;
+}
+
+.register-section .form-row {
+  margin-bottom: 1.5rem;
+}
+
+.register-section .checkbox-label {
+  font-size: var(--font-size-xs);
+  line-height: 1.4;
+}
+
+.register-section .checkbox-label a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.register-section .checkbox-label a:hover {
+  text-decoration: underline;
+}
+
+/* Additional responsive styles for register */
+@media (max-width: 768px) {
+  .register-section .auth-container {
+    max-width: 100%;
+  }
+}
