@@ -645,4 +645,6 @@ function showProduct_SubNav(category) {
   document.getElementById("product-center-pd").innerHTML = html;
 }
 
+console.log("Test");
+
 window.showProduct_SubNav = showProduct_SubNav;
