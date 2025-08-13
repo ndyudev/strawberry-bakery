@@ -1,130 +1,245 @@
-# 🍓 Strawberry Bakery
+# 🍓 Strawberry Bakery - Website Bánh Kẹo
 
-<div align="center">
+## 📖 Mô tả dự án
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Responsive](https://img.shields.io/badge/Responsive-00C7B7?style=for-the-badge&logo=responsive&logoColor=white)
-![FontAwesome](https://img.shields.io/badge/FontAwesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
+**Strawberry Bakery** là một website bánh kẹo trực tuyến được xây dựng bằng HTML, CSS và JavaScript thuần. Website cung cấp giao diện đẹp mắt để khách hàng xem sản phẩm, đăng ký tài khoản, đăng nhập và mua sắm các loại bánh kẹo thơm ngon.
 
-**Website bán bánh kem hiện đại, giao diện đẹp, tối ưu trải nghiệm người dùng.**
+## ✨ Tính năng chính
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ndyudev)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chauunhatduyyit@gmail.com)
+### 🛍️ **Quản lý sản phẩm**
+- Hiển thị danh sách sản phẩm đa dạng (Cakes, Cookies, Sweetin, Healthy, Sweetbox, Flan)
+- Phân loại sản phẩm theo danh mục
+- Hiển thị giá cả và thông tin chi tiết
+- Tìm kiếm và lọc sản phẩm
 
-</div>
+### 👤 **Hệ thống tài khoản**
+- Đăng ký tài khoản mới
+- Đăng nhập/Đăng xuất
+- Phân quyền người dùng (User/Admin)
+- Lưu trữ thông tin cá nhân
 
----
+### 🛒 **Giỏ hàng thông minh**
+- Thêm sản phẩm vào giỏ hàng
+- Cập nhật số lượng sản phẩm
+- Xóa sản phẩm khỏi giỏ hàng
+- Tính tổng tiền tự động
+- Lưu trữ giỏ hàng trong localStorage
 
-## 📖 Giới thiệu
+### 🔧 **Trang Admin (dành cho Admin)**
+- Thêm sản phẩm mới
+- Quản lý danh sách sản phẩm
+- Xóa sản phẩm
+- Cập nhật thông tin sản phẩm
 
-**Strawberry Bakery** là website bán bánh kem với giao diện hiện đại, tông màu hồng pastel, tối ưu cho cả desktop và mobile. Dự án sử dụng HTML, CSS, JavaScript thuần, tách module CSS rõ ràng, dễ bảo trì.
+### 📱 **Responsive Design**
+- Giao diện tương thích mọi thiết bị
+- Mobile-first approach
+- Navigation menu thông minh
 
----
+## 🚀 Cài đặt và chạy dự án
 
-## 🎯 Tính năng nổi bật
+### **Yêu cầu hệ thống**
+- Trình duyệt web hiện đại (Chrome, Firefox, Safari, Edge)
+- Không cần cài đặt Node.js hay package manager
 
-- 🍰 **Danh mục sản phẩm**: Hiển thị sản phẩm mới, sản phẩm nổi bật, lưới sản phẩm đẹp mắt.
-- 🖼️ **Banner lớn**: Hình ảnh thương hiệu nổi bật.
-- 🛒 **Hiệu ứng hover**: Card sản phẩm có hiệu ứng mượt mà, chuyên nghiệp.
-- 📱 **Responsive**: Tương thích mọi thiết bị.
-- 🌈 **Tách CSS module**: Dễ mở rộng, bảo trì.
-- 🔗 **Menu dropdown**: Điều hướng hiện đại, có subnav.
-- 📦 **Footer đầy đủ**: Thông tin liên hệ, mạng xã hội, copyright.
+### **Cách chạy**
+1. **Clone hoặc download** dự án về máy
+2. **Mở thư mục** `strawberry-bakery`
+3. **Chạy file** `index.html` bằng trình duyệt web
+4. **Hoặc sử dụng Live Server** trong VS Code
 
----
-
-## 📁 Cấu trúc dự án
-
+### **Cấu trúc thư mục**
 ```
 strawberry-bakery/
+├── index.html              # Trang chủ
+├── product.html            # Trang sản phẩm
+├── product-detail.html     # Trang chi tiết sản phẩm
+├── cart.html              # Trang giỏ hàng
+├── login.html             # Trang đăng nhập
+├── register.html          # Trang đăng ký
+├── admin.html             # Trang quản trị (Admin)
 ├── assets/
-│   ├── css/
-│   │   ├── main.css
-│   │   ├── theme.css
-│   │   └── sections/
-│   │       ├── header.css
-│   │       ├── banner.css
-│   │       ├── home-product.css
-│   │       ├── product.css
-│   │       ├── footer.css
-│   │       └── responsive.css
-│   ├── images/
-│   │   ├── logo/
-│   │   ├── banner/
-│   │   └── product/
-│   └── js/
-│       ├── main.js
-│       └── data-product.js
-├── index.html
-├── product.html
-└── README.md
+│   ├── css/               # File CSS
+│   ├── images/            # Hình ảnh sản phẩm
+│   └── js/                # File JavaScript
+└── README.md              # File này
 ```
 
----
+## 🎯 Hướng dẫn sử dụng
 
-## 🚀 Hướng dẫn sử dụng
+### **Khách hàng**
+1. **Xem sản phẩm**: Truy cập trang chủ hoặc Menu
+2. **Đăng ký tài khoản**: Click "Register" để tạo tài khoản mới
+3. **Đăng nhập**: Sử dụng email và mật khẩu đã đăng ký
+4. **Mua sắm**: Thêm sản phẩm vào giỏ hàng
+5. **Thanh toán**: Xem giỏ hàng và tiến hành đặt hàng
 
-1. **Clone hoặc tải về project**
-2. **Mở file `index.html` hoặc `product.html` trên trình duyệt**
-3. **Chỉnh sửa nội dung, hình ảnh, sản phẩm trong các file HTML/CSS theo ý muốn**
-
----
+### **Admin**
+1. **Đăng nhập** với tài khoản có `role = 1`
+2. **Truy cập trang Admin** từ menu Account
+3. **Thêm sản phẩm mới** bằng form
+4. **Quản lý sản phẩm** hiện có
 
 ## 🛠️ Công nghệ sử dụng
 
-| Công nghệ      | Mục đích                |
-|----------------|------------------------|
-| HTML5          | Cấu trúc trang         |
-| CSS3           | Giao diện, layout      |
-| JavaScript     | Tương tác, hiệu ứng    |
-| FontAwesome    | Icon đẹp, hiện đại     |
-| Responsive     | Tương thích mobile     |
+### **Frontend**
+- **HTML5**: Cấu trúc trang web
+- **CSS3**: Styling và responsive design
+- **JavaScript (ES6+)**: Logic xử lý và tương tác
 
----
+### **Data Storage**
+- **localStorage**: Lưu trữ dữ liệu người dùng, giỏ hàng, sản phẩm
+- **JSON**: Format dữ liệu
 
-## 📸 Ảnh minh họa
+### **Libraries & Icons**
+- **Font Awesome**: Icon library
+- **Google Fonts**: Typography
 
-- **Trang chủ**: Banner lớn, 2 section sản phẩm, layout grid 4 sản phẩm, hiệu ứng hover mượt mà.
-- **Trang product**: Grid sản phẩm đồng bộ style với trang chủ.
-- **Footer**: Đầy đủ thông tin, social, responsive.
+## 📱 Responsive Breakpoints
 
----
+```css
+/* Desktop */
+@media (min-width: 1024px) { ... }
 
-## 💡 Ghi chú
+/* Tablet */
+@media (max-width: 768px) { ... }
 
-- Để thêm sản phẩm mới, chỉ cần thêm vào HTML và ảnh vào thư mục `assets/images/product/`.
-- Để đổi màu chủ đạo, chỉnh trong `:root` của `main.css` hoặc `theme.css`.
-- Để thêm menu con, chỉnh trong HTML và CSS phần `.subnav`.
+/* Mobile */
+@media (max-width: 480px) { ... }
+```
 
----
+## 🔐 Bảo mật và Validation
 
-## 🤝 Đóng góp
+### **Form Validation**
+- Kiểm tra email đã đăng ký
+- Validate mật khẩu (tối thiểu 8 ký tự)
+- Kiểm tra xác nhận mật khẩu
+- Hiển thị cảnh báo với class `borderWarning`
 
-1. **Fork** repository
-2. **Tạo branch mới** (`feature/ten-tinh-nang`)
-3. **Commit** thay đổi (`git commit -m 'Thêm tính năng mới'`)
-4. **Push** lên branch của bạn
-5. **Mở Pull Request**
+### **Phân quyền**
+- **User (role = 0)**: Xem sản phẩm, mua hàng
+- **Admin (role = 1)**: Quản lý sản phẩm, thêm/xóa
 
----
+## 🎨 Design System
+
+### **Color Palette**
+- **Primary**: `#ff6b9d` (Pink)
+- **Secondary**: `#c44569` (Dark Pink)
+- **Success**: `#28a745` (Green)
+- **Warning**: `#ffc107` (Yellow)
+- **Danger**: `#dc3545` (Red)
+
+### **Typography**
+- **Headings**: Bold, modern fonts
+- **Body**: Readable, clean fonts
+- **Prices**: Highlighted with primary color
+
+### **Components**
+- **Product Cards**: Consistent design với hover effects
+- **Buttons**: Gradient backgrounds với hover states
+- **Forms**: Clean input fields với validation feedback
+
+## 📊 Cấu trúc dữ liệu
+
+### **User Object**
+```javascript
+{
+  name: "Tên người dùng",
+  sodt: "Số điện thoại",
+  email: "email@example.com",
+  pw: "mật khẩu",
+  role: 0 // 0: User, 1: Admin
+}
+```
+
+### **Product Object**
+```javascript
+{
+  id: "ID sản phẩm",
+  title: "Tên sản phẩm",
+  price: 100000,
+  category: "danh mục",
+  img: "./path/to/image.jpg",
+  view: 1,
+  hot: 1
+}
+```
+
+### **Cart Item Object**
+```javascript
+{
+  sp: "product object",
+  qty: "số lượng"
+}
+```
+
+## 🚀 Tính năng nâng cao
+
+### **Real-time Updates**
+- Cập nhật giỏ hàng tự động
+- Sync dữ liệu giữa các tab
+- Storage event listeners
+
+### **Performance Optimization**
+- Lazy loading images
+- Efficient DOM manipulation
+- Optimized event handling
+
+## 🐛 Troubleshooting
+
+### **Lỗi thường gặp**
+1. **Giỏ hàng không cập nhật**: Kiểm tra localStorage và script loading order
+2. **Sản phẩm không hiển thị**: Verify file paths và data structure
+3. **Form validation không hoạt động**: Check JavaScript console errors
+
+### **Debug Tips**
+- Sử dụng **Console** để xem logs
+- Kiểm tra **localStorage** trong DevTools
+- Verify **script loading order** trong HTML
+
+## 📈 Roadmap & Tính năng tương lai
+
+### **Phase 2**
+- [ ] Backend API integration
+- [ ] Database (MySQL/PostgreSQL)
+- [ ] User authentication (JWT)
+- [ ] Payment gateway integration
+
+### **Phase 3**
+- [ ] Order management system
+- [ ] Inventory tracking
+- [ ] Customer reviews & ratings
+- [ ] Email notifications
+
+## 👥 Đóng góp
+
+Dự án này được phát triển cho mục đích học tập và portfolio. Mọi đóng góp đều được chào đón!
+
+### **Cách đóng góp**
+1. Fork dự án
+2. Tạo feature branch
+3. Commit changes
+4. Push to branch
+5. Tạo Pull Request
 
 ## 📄 License
 
-Dự án này được phân phối dưới giấy phép MIT.
-
----
+Dự án này được phát hành dưới **MIT License**. Xem file `LICENSE` để biết thêm chi tiết.
 
 ## 📞 Liên hệ
 
-<div align="center">
+- **Developer**: [Tên của bạn]
+- **Email**: [email@example.com]
+- **GitHub**: [github.com/username]
 
-**Chau Nhat Duy** - *Web Developer*
+---
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@gmail.com)
+## 🎉 Cảm ơn
 
-*"Làm web đẹp, chuẩn, dễ mở rộng và bảo trì!"* 🍓
+Cảm ơn bạn đã quan tâm đến dự án **Strawberry Bakery**! 
 
-</div>
+**"Every bite is made with passion and care"** 🍰✨
+
+---
+
+*Made with ❤️ by [Tên của bạn]*

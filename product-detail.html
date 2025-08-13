@@ -13,7 +13,6 @@
     <script type="module" src="./js/subnav-data.js"></script>
     <script type="module" src="./js/product-detail.js"></script>
     <script src="./js/fill-data-product.js"></script>
-    <script src="./js/product-detail.js"></script>
     <script src="./js/change-img-product.js"></script>
   </head>
   <body>
@@ -26,20 +25,15 @@
             alt="Strawberry bakery logo"
           />
         </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="product.html">
-                Menu <i class="fa-solid fa-caret-down"></i>
-              </a>
-              <ul class="subnav" id="subnav-list"></ul>
-            </li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <nav class="nav" id="nav">
+          <!-- Show menu here-->
         </nav>
+        <div class="header-cart">
+          <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span class="cart-count" id="sl">0</span>
+          </a>
+        </div>
         <div class="menu-toggle" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -117,19 +111,38 @@
 
             <div class="product-options">
               <div class="quantity-selector">
-                <label>Sweetin – Chocolate Ruby số lượng</label>
+                <label>Số lượng:</label>
                 <div class="quantity-controls">
-                  <button class="quantity-btn minus">-</button>
+                  <!-- <button
+                    type="button"
+                    class="quantity-btn minus"
+                    onclick="changeQuantity('minus')"
+                  >
+                    -
+                  </button> -->
                   <input
                     type="number"
+                    id="quantity-input"
                     value="1"
                     min="1"
                     class="quantity-input"
                   />
-                  <button class="quantity-btn plus">+</button>
+                  <!-- <button
+                    type="button"
+                    class="quantity-btn plus"
+                    onclick="changeQuantity('plus')"
+                  >
+                    +
+                  </button> -->
                 </div>
               </div>
-              <button class="add-to-cart-btn" onclick="window.location.href='cart.html'">Thêm vào giỏ hàng</button>
+              <button
+                type="button"
+                class="add-to-cart-btn"
+                onclick="addCart(this, productDetail)"
+              >
+                Thêm vào giỏ hàng
+              </button>
             </div>
 
             <div class="product-meta">
@@ -145,9 +158,7 @@
           <p>Sweetin là dòng bánh mà Strawberry Bakery chiếm ưu thế...</p>
           <p>Bánh có năm lớp chính...</p>
           <p>Sweetin Chocolate Ruby là mẫu bánh được trang trí...</p>
-          <p>
-            Bánh Sweetin Chocolate Ruby được nhiều khách hàng chọn lựa...
-          </p>
+          <p>Bánh Sweetin Chocolate Ruby được nhiều khách hàng chọn lựa...</p>
           <div class="related-categories">
             <h4>Xem thêm các loại bánh khác:</h4>
             <ul>
@@ -213,5 +224,8 @@
         </div>
       </footer>
     </div>
+    <script src="./js/show-menu.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

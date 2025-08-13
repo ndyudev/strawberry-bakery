@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strawberry Bakery</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/logo/strawberry-bakery-logo.svg" />
+    <script
+      src="https://kit.fontawesome.com/f4e3fc99b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <script src="./js/fill-data-product.js"></script>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <img
+            src="./assets/images/logo/strawberry-bakery-logo.svg"
+            alt="Strawberry bakery logo"
+          />
+        </div>
+        <nav class="nav" id="nav">
+          <!-- Show menu here-->
+        </nav>
+        <div class="header-cart">
+          <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span class="cart-count" id="sl">0</span>
+          </a>
+        </div>
+        <div class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- Admin Section - Thêm sản phẩm mới -->
+      <section class="admin-section">
+        <div class="admin-container">
+          <div class="admin-box">
+            <div class="admin-header">
+              <h1>Thêm sản phẩm mới</h1>
+              <p>Quản lý sản phẩm Strawberry Bakery 🍓</p>
+            </div>
+
+            <form class="admin-form" id="addProductForm" onsubmit="return addNewProduct(event)">
+              <div class="form-group">
+                <label for="productTitle">Tên sản phẩm:</label>
+                <input
+                  type="text"
+                  id="productTitle"
+                  placeholder="Nhập tên sản phẩm"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="productPrice">Giá (VNĐ):</label>
+                <input
+                  type="number"
+                  id="productPrice"
+                  placeholder="Nhập giá sản phẩm"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="productCategory">Danh mục:</label>
+                <select id="productCategory" required>
+                  <option value="">Chọn danh mục</option>
+                  <option value="cakes">Bánh</option>
+                  <option value="sweetbox">Sweetbox</option>
+                  <option value="cookies">Cookies</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="productImage">Link hình ảnh:</label>
+                <input
+                  type="text"
+                  id="productImage"
+                  placeholder="Nhập link hình ảnh"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="productDescription">Mô tả:</label>
+                <textarea
+                  id="productDescription"
+                  placeholder="Nhập mô tả sản phẩm"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="admin-btn">Thêm sản phẩm</button>
+            </form>
+
+            <!-- Danh sách sản phẩm hiện tại -->
+            <div class="current-products">
+              <h3>Sản phẩm hiện tại</h3>
+              <div id="productList">
+                <!-- Sản phẩm sẽ được load ở đây -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <img
+              src="assets/images/logo/strawberry-bakery-logo.svg"
+              alt="Bakery Logo"
+            />
+            <p>Sweet moments made with love 🍓</p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>🍰 227 Bach Dang, Ho Chi Minh City</p>
+            <p>📧 sales@strawberrybakery.com</p>
+            <p>📞 (+84) 787 544 232</p>
+          </div>
+
+          <!-- Socials -->
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Strawberry Bakery 🍓. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/cart.js"></script>
+    <script src="./js/admin.js"></script>
+    <script type="module" src="./js/product-detail.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/subnav-data.js"></script>
+    <script src="./js/slider-banner.js"></script>
+    <script type="module" src="./js/product-hot.js"></script>
+    <script type="module" src="./js/product-new.js"></script>
+    <script src="./js/show-menu.js"></script>
+    <script src="./js/logout.js"></script>
+  </body>
+</html>

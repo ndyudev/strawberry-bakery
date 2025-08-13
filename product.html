@@ -21,25 +21,15 @@
             alt="Strawberry bakery logo"
           />
         </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="product.html">
-                Menu
-                <i class="fa-solid fa-caret-down"></i>
-              </a>
-              <ul class="subnav" id="subnav-list">
-                <!-- <li><a href="#">Sweetbox</a></li>
-                <li><a href="#">Cake</a></li>
-                <li><a href="#">Flan Gato</a></li> -->
-              </ul>
-            </li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <nav class="nav" id="nav">
+          <!-- Show menu here-->
         </nav>
+        <div class="header-cart">
+          <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span class="cart-count" id="sl">0</span>
+          </a>
+        </div>
         <div class="menu-toggle" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -97,7 +87,9 @@
       </footer>
     </div>
     <script type="module" src="./js/subnav-data.js"></script>
+    <script src="./js/cart.js"></script>
     <script type="module" src="./js/fill-data-product.js"></script>
     <script type="module" src="./js/data-product.js"></script>
+    <script src="./js/show-menu.js"></script>
   </body>
 </html>

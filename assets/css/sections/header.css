@@ -84,6 +84,39 @@
   display: block;
 }
 
+.header-cart {
+  margin-right: 1rem;
+}
+
+.cart-icon {
+  position: relative;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.cart-icon:hover {
+  color: var(--color-primary);
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
 .menu-toggle {
   display: none;
   font-size: var(--font-size-2xl);

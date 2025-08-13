@@ -9,6 +9,9 @@
 @import "./sections/cart.css";
 @import "./sections/login.css";
 @import "./sections/register.css";
+@import "./sections/auth.css";
+@import "./sections/admin.css";
+
 
 
 :root {
