@@ -1,0 +1,4 @@
+/* Validation Error Styling */
+.borderWarning {
+  border: 1px solid red !important;
+}

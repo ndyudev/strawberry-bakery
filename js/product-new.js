@@ -41,7 +41,7 @@ let listProduct = [
   // Sweetbox (13 ảnh)
   { title: "Sweetbox Signature 8 vị", price: 295000, category: "sweetbox", view: 1, hot: 1, img: "./assets/images/product/sweetbox/sweetbox-1.jpg" },
   { title: "Sweetbox Signature 16 vị", price: 495000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-2.jpg" },
-  { title: "Sweetbox Love 12 vị", price: 415000, category: "sweetbox", view: 1, hot: 1, img: "./assets/images/product/sweetbox/sweetbox-3.jpg" },
+  { title: "Sweetbox Love 12 vị", price: 415000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-3.jpg" },
   { title: "Sweetbox Love Garden", price: 595000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-4.jpg" },
   { title: "Sweetbox Chocolate", price: 325000, category: "sweetbox", view: 1, hot: 1, img: "./assets/images/product/sweetbox/sweetbox-5.jpg" },
   { title: "Sweetbox Mix Nuts", price: 355000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-6.jpg" },
@@ -59,7 +59,6 @@ let listProduct = [
   { title: "Flan Gato Trà Thái Đỏ", price: 435000, category: "flan", view: 1, hot: 1, img: "./assets/images/product/flan/flan-3.jpg" },
   { title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" },
 
-
   // Product New
   { id: 48, title: "Flan Gato Mè Đen", price: 425000, category: "flan", view: 1, hot: 0, img: "./assets/images/product/flan/flan-4.jpg" },
   { id: 41, title: "Sweetbox Pistachio", price: 345000, category: "sweetbox", view: 1, hot: 0, img: "./assets/images/product/sweetbox/sweetbox-10.jpg" },
@@ -67,18 +66,30 @@ let listProduct = [
   { id: 6, title: "Sweetin Matcha Opera", price: 235000, category: "sweetin", view: 1, hot: 1, img: "./assets/images/product/sweetin/sweetin-3.jpg" },
 ];
 
-
 // Function to display products
 let productListNew = "";
 
 function showLastProducts() {
+
+  let adminProducts = JSON.parse(localStorage.getItem('productList')) || [];
+  
+
+  let allProducts = [];
+  for (let i = 0; i < listProduct.length; i++) {
+    allProducts.push(listProduct[i]);
+  }
+  for (let i = 0; i < adminProducts.length; i++) {
+    allProducts.push(adminProducts[i]);
+  }
+  
+
   let count = 0;
-  for (let i = listProduct.length - 1; i >= 0; i--) {
+  for (let i = allProducts.length - 1; i >= 0; i--) {
     if (count >= 4) break;
-    const p = listProduct[i];
+    const p = allProducts[i];
 
     productListNew += `
-      <a href="product-detail.html?id=${p.id}" class="product-link">
+      <a href="product-detail.html?id=${p.id || i}" class="product-link">
         <div class="product-card-pd">
           <img src="${p.img}" alt="pd${i}">
           <div class="title-pd">${p.title}</div>
@@ -92,4 +103,12 @@ function showLastProducts() {
   document.querySelector(".product-new-list").innerHTML = productListNew;
 }
 
+
 showLastProducts();
+
+window.addEventListener('storage', function(e) {
+  if (e.key === 'productList') {
+    productListNew = "";
+    showLastProducts();
+  }
+});

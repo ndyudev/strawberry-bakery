@@ -640,6 +640,9 @@ function findProductDetail(id) {
 }
 
 let productDetail = findProductDetail(id);
+
+// Export productDetail để sử dụng trong cart.js
+window.productDetail = productDetail;
 // Đõ dự liệu lên product detail
 function fillProductDetail() {
   document.querySelector(".data-imgMain").innerHTML = `<img

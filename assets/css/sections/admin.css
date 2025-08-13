@@ -1,0 +1,196 @@
+/* Admin Section Styles */
+.admin-section {
+  margin-top: 80px;
+  padding: 2rem 0;
+  background: #f8f9fa;
+}
+
+.admin-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.admin-box {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.admin-header {
+  background: #ff6b9d;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.admin-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.admin-header p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.admin-form {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff6b9d;
+}
+
+.admin-btn {
+  background: #ff6b9d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.admin-btn:hover {
+  background: #e55a8a;
+}
+
+.current-products {
+  padding: 2rem;
+  background: white;
+}
+
+.current-products h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Product Grid - Đơn giản như product.css */
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Product Items - Đơn giản như product-card-pd */
+.product-item {
+  width: 250px;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 1rem;
+}
+
+.product-item:hover {
+  /* transform: translateY(-2px); */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.product-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.product-item .price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff6b9d;
+  margin-bottom: 0.5rem;
+}
+
+.product-item p {
+  margin: 0.25rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.product-item p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.product-item button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.product-item button:hover {
+  background: #c82333;
+}
+
+.product-item button i {
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .admin-form,
+  .current-products {
+    padding: 1rem;
+  }
+  
+  .product-item {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header {
+    padding: 1.5rem;
+  }
+  
+  .product-item {
+    width: 100%;
+    max-width: 250px;
+  }
+}

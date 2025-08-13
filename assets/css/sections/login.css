@@ -80,11 +80,11 @@
   background: var(--color-white);
 }
 
-.form-group input:focus {
+/* .form-group input:focus {
   outline: none;
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(219, 112, 147, 0.1);
-}
+} */
 
 .form-group input::placeholder {
   color: #aaa;
@@ -311,3 +311,5 @@
     padding: 1.5rem 1rem;
   }
 }
+
+
