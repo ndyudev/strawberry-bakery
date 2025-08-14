@@ -41,7 +41,7 @@ let menu = `
             <li>
               ${account}
               <ul class="subnav">
-                ${userRole == "1" ? '<li><a href="admin.html">Add Product</a></li>' : ''}
+                ${userRole == "1" ? '<li><a href="admin.html">Add Pro</a></li>' : ''}
                 ${accountSubnav}
               </ul>
             </li>
