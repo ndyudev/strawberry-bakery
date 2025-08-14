@@ -1,26 +1,19 @@
-// Admin Functions - Quản lý sản phẩm
-
 // Lấy danh sách sản phẩm từ localStorage
 let productList = JSON.parse(localStorage.getItem('productList')) == null ? [] : JSON.parse(localStorage.getItem('productList'));
 
-// Function thêm sản phẩm mới
-function addNewProduct(event) {
-  event.preventDefault();
+function addNewProduct() {
   
-  // Lấy giá trị từ form
   const title = document.getElementById('productTitle').value;
   const price = parseInt(document.getElementById('productPrice').value);
   const category = document.getElementById('productCategory').value;
   const image = document.getElementById('productImage').value;
   const description = document.getElementById('productDescription').value;
   
-  // Kiểm tra dữ liệu
   if (!title || !price || !category || !image || !description) {
     alert('Vui lòng điền đầy đủ thông tin!');
     return false;
   }
   
-  // Tạo sản phẩm mới
   const newProduct = {
     id: Date.now(),
     title: title,
@@ -32,19 +25,14 @@ function addNewProduct(event) {
     hot: 0
   };
   
-  // Thêm vào danh sách
   productList.push(newProduct);
   
-  // Lưu vào localStorage
   localStorage.setItem('productList', JSON.stringify(productList));
   
-  // Hiển thị thông báo
   alert('Thêm sản phẩm thành công!');
   
-  // Reset form
   document.getElementById('addProductForm').reset();
   
-  // Cập nhật danh sách sản phẩm
   displayProducts();
   
   return false;
